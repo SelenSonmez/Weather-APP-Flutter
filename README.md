@@ -3,9 +3,9 @@
 A simple weather App created using [Flutter](https://flutter.dev/) and [Dart](https://dart.dev/) with using API from [WeatherAPI](https://www.weatherapi.com/)</br></br>
 
 <p align="center">
-<img src="https://github.com/SelenSonmez/weather_app/tree/master/lib/assets/screenshot1" width="20%"></img> 
-<img src="https://github.com/SelenSonmez/weather_app/tree/master/lib/assets/screenshot2" width="20%"></img> 
-<img src="https://github.com/SelenSonmez/weather_app/tree/master/lib/assets/screenshot3" width="20%"></img>
+<img src="https://github.com/SelenSonmez/weather_app/blob/master/lib/assets/screenshot1.png" width="20%"></img> 
+<img src="https://github.com/SelenSonmez/weather_app/blob/master/lib/assets/screenshot2.png" width="20%"></img> 
+<img src="https://github.com/SelenSonmez/weather_app/blob/master/lib/assets/screenshot3.png" width="20%"></img>
 </p>
 
 ## Features
