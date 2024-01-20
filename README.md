@@ -20,7 +20,7 @@ A simple weather App created using [Flutter](https://flutter.dev/) and [Dart](ht
 
 1. Create an account at [WeatherAPI](https://www.weatherapi.com/).
 2. Then get your API key from there.
-   > Then replace `YOUR_API_KEY` with your own API key from OpenWeatherMap
+   > Then replace `YOUR_API_KEY` with your own API key from WeatherAPI
 3. Clone the repo
    ```sh
    git clone https://github.com/SelenSonmez/weather_app.git
@@ -29,12 +29,10 @@ A simple weather App created using [Flutter](https://flutter.dev/) and [Dart](ht
    ```sh
    flutter pub get
    ```
-5. Navigate to **lib/data/weather_api_client.dart** and paste your API key to the apiKey variable
-   ```dart
-   String apiKey = 'Paste Your API Key Here';
-   ```
-6. Run the App
+5. Create .env file and fill the retrieved API Key
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+   ```
+    API_KEY= YOUR_API_KEY
+   ```
+
+6. Run the App
