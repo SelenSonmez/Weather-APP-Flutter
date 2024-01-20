@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:weather_app/blocs/bloc/weather_bloc.dart';
 import 'package:weather_app/locator.dart';
 import 'package:weather_app/weather.dart';
 
-void main() {
+void main() async {
+  await dotenv.load(fileName: ".env");
   setUpLocator();
   runApp(const MyApp());
 }

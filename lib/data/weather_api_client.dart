@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:http/http.dart' as http;
 
 import '../models/weather.dart';
@@ -9,8 +10,9 @@ class WeatherApiClient {
   final http.Client httpClient = http.Client();
 
   Future<Weather> getWeather(String cityName) async {
+    String apiKey = dotenv.env['API_KEY'] ?? '';
     final response = await http.get(Uri.parse(
-        '$baseUrl/forecast.json?key=62389b0e5ece4994a8f204430241501&q=$cityName&aqi=no&days=3'));
+        '$baseUrl/forecast.json?key=$apiKey&q=$cityName&aqi=no&days=3'));
 
     if (response.statusCode == 200) {
       Weather weather =
